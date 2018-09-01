@@ -27,6 +27,9 @@ public class DemoEmployee {
 		int totalsal = banu1.calculateSalary1();
 
 		System.out.println("Total Salary is :"+ totalsal);
+		
+		
+		
 	}
 
 }

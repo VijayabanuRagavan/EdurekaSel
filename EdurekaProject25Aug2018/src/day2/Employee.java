@@ -20,7 +20,8 @@ public class Employee {
 		totalSalary = salary + bonus;
 		
 		return totalSalary;
-		
-		
+			
 	}
+	
+	
 }
