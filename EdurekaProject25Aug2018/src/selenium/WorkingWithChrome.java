@@ -31,8 +31,6 @@ public class WorkingWithChrome {
 	
 	
 	
-
-	
 	String getPageTitle() {
 		
 		return driver.getTitle();
