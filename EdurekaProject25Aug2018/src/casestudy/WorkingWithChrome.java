@@ -20,7 +20,6 @@ public class WorkingWithChrome {
 
 	}
 
-	
 	// .get and navigate are the same; different ways to achieve the same
 	void navigateCommands() {
 
@@ -32,19 +31,56 @@ public class WorkingWithChrome {
 
 	}
 
-		
-	public void inspectCourse() {
-	
-		
+	public void searchCourseById() {
+
 		driver.findElement(By.id("homeSearchBar")).sendKeys("Java");
 		driver.findElement(By.id("homeSearchBar")).clear();
+
+	}
+
+	public void searchCourseByName() {
+
+		driver.findElement(By.name("user_v1[query]")).sendKeys("Selenium");
+		driver.findElement(By.name("user_v1[query]")).clear();
+
+	}
+
+	public void searchCourseByClassName() {
+
+		driver.findElement(By.className("search_input")).sendKeys("Testing");
+		driver.findElement(By.className("search_input")).clear();
+
+	}
+
+	public void searchCourseByCSSSelector() {
+
 		
-		
-		
+		 driver.findElement(By.cssSelector("input#homeSearchBar")).sendKeys("Testing");
+		 driver.findElement(By.cssSelector("input#homeSearchBar")).clear();
+
 		
 	}
-	
-	
+
+	public void loginByLinkText() {
+
+		driver.findElement((By.linkText("Log In"))).click();
+
+		
+	}
+
+	public void loginByPartialLinkText() {
+
+		
+
+		driver.findElement((By.partialLinkText("Log"))).click();
+	}
+
+	public void loginByXPath() {
+
+		driver.findElement(By.xpath("//a[@class=\"signin top-signin\"]")).click();
+
+	}
+
 	void closeBrowser() {
 
 		// driver.close();
@@ -53,5 +89,8 @@ public class WorkingWithChrome {
 		// kills the exe as well
 		driver.quit();
 	}
+	
+	
+	
 
 }
