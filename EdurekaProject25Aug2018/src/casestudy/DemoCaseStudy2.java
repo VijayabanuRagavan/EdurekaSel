@@ -8,11 +8,12 @@ public class DemoCaseStudy2 {
 		//Launch,Navigate,Timeout
 		//Steps 1 - 6
 		wc.invokeBrowser();
-
+		System.out.println("Invoke Browser successful");
+		
 		//Search by name and Enter
 		//Steps 7-8
 		wc.searchCourseByName();
-		
+		System.out.println("Search by Course name successful");
 		
 		//Retrieve and compare Page Title
 		//steps 9 - 10
@@ -39,7 +40,7 @@ public class DemoCaseStudy2 {
 		wc.clickAllCourses();
 		System.out.println("All Course page loaded successfully");
 		
-		wc.closeBrowser();
+		//wc.closeBrowser();
 		
 	}
 

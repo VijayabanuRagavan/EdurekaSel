@@ -18,7 +18,7 @@ public class DemoCaseStudy1 {
 
 		// Search, Click Log In by Link Text
 		wc.searchCourseById();
-		wc.searchCourseByName();
+		//wc.searchCourseByName();
 		wc.searchCourseByCSSSelector();
 		wc.loginByLinkText();
 		wc.closeBrowser();

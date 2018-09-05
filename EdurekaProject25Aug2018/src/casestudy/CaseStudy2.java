@@ -33,7 +33,7 @@ public class CaseStudy2 {
 
 	public void searchCourseByName() {
 
-		driver.findElement(By.name("user_v1[query]")).sendKeys("Selenium");
+		driver.findElement(By.id("homeSearchBar")).sendKeys("Selenium");
 
 		driver.findElement(By.id("homeSearchBar")).sendKeys(Keys.RETURN);
 
