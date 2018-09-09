@@ -14,11 +14,12 @@ public class DemoCaseStudy3 {
 		System.out.println("Website Launched successfully");
 		
 		//Click on One way and accept alert
-		//cs.clickOneWay();
-		//System.out.println("Alert accepted successfully");
+		cs.clickOneWay();
+		System.out.println("End of Alert Handling");
 		
 		//Search Flight
 		cs.searhcFlight();
+		System.out.println("From input set successfully");
 	}
 	
 	
