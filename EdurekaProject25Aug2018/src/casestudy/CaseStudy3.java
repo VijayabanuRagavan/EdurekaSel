@@ -55,6 +55,18 @@ public class CaseStudy3 {
 		driver.findElement(By.linkText("Bengaluru (BLR)")).click();;
 
 		// //div[@id='oneWay']/form//button
+	
+			}
+	
+	public void searchState() {
 
+		String tripType = "oneWay";
+		String destination = "to";
+		String city = "Delhi";
+
+		String cityXpath = String.format(
+				"//div[@id='%s']/form//div[@class='city-dropdown-list city-name-%s']//a[contains(text(),'%s')]",
+				tripType, destination, city);
 	}
+
 }
