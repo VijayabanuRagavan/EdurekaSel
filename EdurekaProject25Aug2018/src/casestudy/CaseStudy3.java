@@ -41,32 +41,26 @@ public class CaseStudy3 {
 		driver.findElement(By.xpath("//div[@class='modal fade pop-up-1 in']//div[@class='modal-content']//button[text()='OK']")).click();	
 			
 
-			
-
 	}
 
-	public void searhcFlight() {
 
-		driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
-		driver.findElement(By.xpath(
-				"//input[@class=\"origins-value city-name-value\" and @placeholder=\"From\" and @style=\"outline: 0\"]"))
-				.click();
+	
+	public void searchOneWayFlight() {
+
 		
-		driver.findElement(By.linkText("Bengaluru (BLR)")).click();;
+		
+		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		
+		driver.findElement(By.xpath("//div[@id='oneWay']/form//div[@class='city-dropdown-list city-name-from']//a[contains(text(),'Bengaluru')]")).click();
+		//driver.findElement(By.xpath("//div[@id='oneWay']/form//input[@placeholder='To']")).sendKeys("Lucknow (LKO)");
+    
+		driver.findElement(By.xpath("//div[@id='oneWay']/form//div[@class='city-dropdown-list city-name-from']//a[contains(text(),'Lucknow')]")).click();
+		driver.findElement(By.xpath("//div[@id='oneWay']/form//button[@type='submit']")).click();
+		
+		
+		
 
-		// //div[@id='oneWay']/form//button
-	
-			}
-	
-	public void searchState() {
-
-		String tripType = "oneWay";
-		String destination = "to";
-		String city = "Delhi";
-
-		String cityXpath = String.format(
-				"//div[@id='%s']/form//div[@class='city-dropdown-list city-name-%s']//a[contains(text(),'%s')]",
-				tripType, destination, city);
+		
 	}
 
 }

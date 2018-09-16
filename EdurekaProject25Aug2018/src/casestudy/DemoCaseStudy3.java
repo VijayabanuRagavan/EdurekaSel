@@ -18,8 +18,8 @@ public class DemoCaseStudy3 {
 		System.out.println("End of Alert Handling");
 		
 		//Search Flight
-		cs.searhcFlight();
-		System.out.println("From input set successfully");
+		cs.searchOneWayFlight();
+		System.out.println("OneWay Flight search completed successfully");
 	}
 	
 	
