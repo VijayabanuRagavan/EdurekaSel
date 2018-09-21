@@ -20,7 +20,7 @@ public class DemoCaseStudy3 {
 		cs.searchOneWayFlight();
 		System.out.println("OneWay Flight search completed successfully");
 		
-		//Close Browser after search
+			//Close Browser after search
 		cs.closeBrowser();
 		
 	}
